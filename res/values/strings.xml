@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, BTClient!</string>
+    <string name="app_name">BTClient</string>
+    
+    <!-- BTClient -->
+    <string name="cannot_open_bluetooth">无法打开蓝牙，请确保手机有蓝牙功能！</string>
+    <string name="connection_failed">连接失败！</string>
+    <string name="connect">连接</string>
+    <string name="succeed">成功</string>
+    <string name="failed">失败</string>
+    <string name="disconnect">断开</string>
+    <string name="fail_to_receive_data">接收数据失败</string>
+    <string name="opening_bt">蓝牙打开中..</string>
+    <string name="file_name">文件名</string>
+    <string name="confirm">确定</string>
+    <string name="save_succeed">保存成功</string>
+    <string name="sdcard_not_found">找不到SD卡</string>
+    <string name="cancel">取消</string>
+    
+    <!-- DeviceListActivity -->
+    <string name="scanning">设备查找中..</string>
+    <string name="select_device">选择连接设备</string>
+    <string name="none_found">找不到新设备</string>
+    
+    <!--  main.xml -->
+    <string name="text">Aisino BTClient</string>
+    <string name="send">发送</string>
+    <string name="save">保存</string>
+    <string name="hex">HEX</string>
+    <string name="ascii">ASCII</string>
+    <string name="clear">清空</string>
+    <string name="quit">退出</string>
+    
+    
+</resources>
