@@ -55,6 +55,7 @@ public class BTClient extends Activity implements SmartKeyInterf {
 	boolean bThread = false;
 
 	boolean bHex = true;
+	boolean isSendCon = false;
 
 	private BluetoothAdapter _bluetooth = BluetoothAdapter.getDefaultAdapter();
 
@@ -86,6 +87,22 @@ public class BTClient extends Activity implements SmartKeyInterf {
 	}
 
 	public void onSendButtonClicked(View v) {
+		this.sendMsg();
+	}
+
+	public void onSendConButtonClicked(View v) {
+		Button button = (Button) findViewById(R.id.btn_sendCon);
+		isSendCon = !isSendCon;
+		if (isSendCon) {
+			button.setText(getString(R.string.sendConStop));
+			this.sendMsg();
+		} else {
+			button.setText(getString(R.string.sendCon));
+		}
+	}
+	
+	
+	private void sendMsg() {
 		if (bHex == true) {
 			try {
 				OutputStream os = _socket.getOutputStream();
@@ -128,6 +145,7 @@ public class BTClient extends Activity implements SmartKeyInterf {
 			}
 		}
 	}
+	
 
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
 		switch (requestCode) {

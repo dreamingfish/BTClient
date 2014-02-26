@@ -24,8 +24,10 @@
     <string name="none_found">找不到新设备</string>
     
     <!--  main.xml -->
-    <string name="text">Aisino BTClient</string>
+    <string name="text">AisinoChip BTClient</string>
     <string name="send">发送</string>
+    <string name="sendCon">连续</string>
+    <string name="sendConStop">停止</string>
     <string name="save">保存</string>
     <string name="hex">HEX</string>
     <string name="ascii">ASCII</string>
